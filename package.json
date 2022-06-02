@@ -1,0 +1,15 @@
+{
+  "name": "renovate_tutorial",
+  "version": "0.0.1",
+  "description": "a simple package json for renovate tutorial use only",
+  "main": "index.js",
+  "repository": "https://someDummygit/myOrg/myRepo.git",
+  "author": "Philip",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "lodash": "4.17.20",
+    "graceful-fs": "3.0.12",
+    "ansi-regex": "4.1.0",
+    "commander": "2.20.3"
+  }
+}
