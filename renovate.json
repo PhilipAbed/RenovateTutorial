@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "github>whitesource/merge-confidence:beta"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "ansi-regex"
+      ],
+      "allowedVersions": "<= 5.0.1"
+    },
+    {
+      "matchPackageNames": [
+        "lodash"
+      ],
+      "allowedVersions": "<= 4.17.21"
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "matchManagers": [
+        "npm"
+      ],
+      "dependencyDashboardApproval": true
+    }
+  ]
+}
