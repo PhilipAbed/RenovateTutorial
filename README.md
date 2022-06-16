@@ -29,6 +29,9 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 - After installing and configuring the Renovate app, an onboarding Renovate Pull Request will be automatically generated. 
 - This PR is there to help you understand Renovate and its default configurations before regular Pull Requests begin.
 - Navigate to the `Pull Requests` section in GitHub, and open the newly generated PR - `Configure Renovate`.
+ 
+![image](https://user-images.githubusercontent.com/42116482/174042743-3e8414d9-b49b-49fd-b70f-8bd425b90240.png)
+
 - The onboarding PR contains: 
   - A list of all package files detected in your code, based on Renovate scanning results.
   - A description of the default configuration settings that will be applied (can be modified later according to the documentation).
