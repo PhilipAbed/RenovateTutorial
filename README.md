@@ -82,7 +82,7 @@ In this case - both package.json file and related yarn.lock file
 ![image](https://user-images.githubusercontent.com/42116482/173993101-12ecdbf8-26e6-4d23-aeae-d00a6c41fbe6.png)
 
 - A user can manually generate the creation of dependency updates directly from the dashboard. 
-- give it a try - under the `Rate Limited` section, check the box next to `Update dependency commander to vX` and navigate to the `Pull requests` section to see the generated PR.
+- give it a try - under the `Rate Limited` section, check the box next to `Update dependency commander to vX` and navigate to the `Pull requests` section to review the generated PR and merge it to the repo.
 - The dependency dashboard also provides a list of all the detected dependencies and package managers in your repository.
 - You are also capable of re-running Renovate manually directly from the dependency dashboard.
 
