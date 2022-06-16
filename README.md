@@ -49,7 +49,8 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
   - Option to rebase the PR.
   - Link to view renovate logs.
 ![image](https://user-images.githubusercontent.com/42116482/173989747-a9ff5a27-ecfc-42eb-a666-4a98d0434821.png)
--Upon decision to merge Renovate’s pull request suggestion to your repository, merge the pull request and the dependency will be updated across your repository.
+
+- Upon decision to merge Renovate’s pull request suggestion to your repository, merge the pull request and the dependency will be updated across your repository.
 ![image](https://user-images.githubusercontent.com/42116482/173990014-2995099b-0f71-43b3-8e79-242ab6213650.png)
 
 
