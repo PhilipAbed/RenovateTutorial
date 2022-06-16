@@ -67,6 +67,7 @@ In this case - both package.json file and related yarn.lock file
 
 ![image](https://user-images.githubusercontent.com/42116482/174041127-5f7c3e3d-0722-4858-af67-4cec03bbce93.png)
 
+- Merge this pul request.
 
 ## Dependency Dashboard
 
@@ -87,6 +88,6 @@ In this case - both package.json file and related yarn.lock file
 ##
 **Congratulations!!!** 
 
-**You have successfully completed your first Renovate Dependency Update.**
+**You have successfully completed the Renovate onboarding and installation tutorial and performed your first Renovate Dependency Update.**
 
 **now its time to configure Renovate to the rest of your repositories and let Renovate do the work.**
