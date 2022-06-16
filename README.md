@@ -14,11 +14,11 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 - Fork [this](https://github.com/PhilipAbed/RenovateTutorial) repository
 - Make sure `issues` are enabled on github, by navigating to the main page of the forked repository and then go to `settings` -> `general` -> and check the `issues` checkbox under the Features section.
 
-![image](https://user-images.githubusercontent.com/42116482/173985257-60e87a90-a920-4ffd-a357-366bfa543d58.png)
+![image](https://user-images.githubusercontent.com/42116482/174042096-712ea55c-1b72-48ac-ae29-548ad23f2fd2.png)
 
 - Install the Renovate app to your account - go to the [Renovate App GitHub page](https://github.com/apps/renovate), install it, and configure the Repository Access to mark `Only select repositories` and make sure to select the forked RenovateTutorial repo.
 
-![image](https://user-images.githubusercontent.com/42116482/173985330-bbdbbe94-b883-4daf-a4d5-b0393e767200.png)
+![image](https://user-images.githubusercontent.com/42116482/174042280-f4f1212f-19f1-4f97-b747-b1705a8de16f.png)
 
 ![image](https://user-images.githubusercontent.com/42116482/173985535-44ccc750-50aa-452b-b9dc-4fafb65bfc75.png)
 
@@ -33,7 +33,10 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
   - A list of all package files detected in your code, based on Renovate scanning results.
   - A description of the default configuration settings that will be applied (can be modified later according to the documentation).
   - What to expect - A list indicating dependency updates PRs that Renovate is about to automatically create.
-  - Link to Renovate’s official [documentation](https://docs.renovatebot.com/). 
+  - Link to Renovate’s official [documentation](https://docs.renovatebot.com/).
+ 
+![image](https://user-images.githubusercontent.com/42116482/174041401-6c6bd26e-48ac-4b97-9522-a5097bd1ad3d.png)
+
 - Merge this pull request. 
 - Upon merging this pull request, a `renovate.json`, which is Renovate’s configuration file, will be created and Renovate will begin working in the background.
 - The `renovate.json` file in your repository will contain a default configuration [preset](https://docs.renovatebot.com/key-concepts/presets/) `config:base`
@@ -59,7 +62,7 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 - Upon decision to merge Renovate’s pull request suggestion to your repository, merge the pull request and the dependency will be updated across your repository. 
 In this case - both package.json file and related yarn.lock file
 
-![image](https://user-images.githubusercontent.com/42116482/173990014-2995099b-0f71-43b3-8e79-242ab6213650.png)
+![image](https://user-images.githubusercontent.com/42116482/174041127-5f7c3e3d-0722-4858-af67-4cec03bbce93.png)
 
 
 ## Dependency Dashboard
