@@ -14,7 +14,8 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 - Fork [this](https://github.com/PhilipAbed/RenovateTutorial) repository
 - Make sure `issues` are enabled on github, by navigating to the main page of the forked repository and then go to `settings` -> `general` -> and check the `issues` checkbox under the Features section.
 
-![image](https://user-images.githubusercontent.com/42116482/174042096-712ea55c-1b72-48ac-ae29-548ad23f2fd2.png)
+![image](https://user-images.githubusercontent.com/42116482/174054084-7743e412-cd29-4f83-b984-9ec5d78ca892.png)
+
 
 - Install the Renovate app to your account - go to the [Renovate App GitHub page](https://github.com/apps/renovate), install it, and configure the Repository Access to mark `Only select repositories` and make sure to select the forked RenovateTutorial repo.
 
