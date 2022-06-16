@@ -1,4 +1,4 @@
-FROM php:8.1-fpm
+FROM php:8.0-fpm
 
 # Install dockerize so we can wait for containers to be ready
 ENV DOCKERIZE_VERSION 0.6.1
