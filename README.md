@@ -41,7 +41,7 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 - According to Renovate’s default settings, Renovate will create 2 update PRs, based on a rate limit of 2 PRs created per hour, as stated before in the onboarding PR.
 - You should already see notifications for these pull requests in the `Pull Requests` section of the repository.
 - Navigate to it and open the `Update dependency lodash to x.y.z` PR.
-![image](https://user-images.githubusercontent.com/42116482/173989635-935ac533-76da-4acb-8b6a-c5836c780f83.png)
+![image](https://user-images.githubusercontent.com/42116482/173993509-be38f63d-4dab-4760-9f5d-cee93f6b0fb5.png)
 - Each update PR consists of:
   - Dependency information (name and version) and its `Merge Confidence` values (will be thoroughly explained in a different tutorial).
   - Up-to-date release notes.
