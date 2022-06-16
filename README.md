@@ -43,7 +43,7 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 - Navigate to it and open the `Update dependency lodash to x.y.z` PR.
 ![image](https://user-images.githubusercontent.com/42116482/173989635-935ac533-76da-4acb-8b6a-c5836c780f83.png)
 - Each update PR consists of:
-  -Dependency information (name and version) and its `Merge Confidence` values (will be thoroughly explained in a different tutorial).
+  - Dependency information (name and version) and its `Merge Confidence` values (will be thoroughly explained in a different tutorial).
   - Up-to-date release notes.
   - Configuration related info.
   - Option to rebase the PR.
@@ -62,10 +62,10 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
   - Visibility into rejected/deferred updates.
   - Overview of all updates that are still `to-do` (open, Rate Limited, Pending Approval, Awaiting Schedule, Pending Status Checks).
   - Information of previously closed PRs. 
-![image](https://user-images.githubusercontent.com/42116482/173990209-be4c6f0d-2665-4bdd-b8fa-70eff06844da.png)
+![image](https://user-images.githubusercontent.com/42116482/173993101-12ecdbf8-26e6-4d23-aeae-d00a6c41fbe6.png)
 
 - A user can manually generate the creation of dependency updates directly from the dashboard. 
-	give it a try - check the box next to (name of update PR) and navigate to the `Pull requests` section to see the generated PR (might take a few minutes).
+- give it a try, under the `Rate Limited` section, check the box next to `Update dependency commander to vX` and navigate to the `Pull requests` section to see the generated PR.
 - The dependency dashboard also provides a list of all the detected dependencies and package managers in your repository.
 - You are also capable of re-running Renovate manually directly from the dependency dashboard.
 
