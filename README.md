@@ -78,7 +78,7 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 
 - A user can manually trigger the creation of dependency updates directly from the dashboard. 
 - Give it a try - under the `Rate Limited` section, check the box next to `Update dependency commander to vX`
-- If you return to the `Pull Requests` menu i your repository you should see the PR appear soon after
+- If you return to the `Pull Requests` menu in your repository you should see the PR appear soon after
 
 The dependency dashboard also provides a list of all the detected dependencies and package managers in your repository. You can also request Renovate runs immediately from the dependency dashboard.
 
