@@ -12,14 +12,12 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 
 - Make sure you are logged in to github.com.
 - Fork [this](https://github.com/PhilipAbed/RenovateTutorial) repository
-- Make sure `issues` are enabled on github, by navigating to the main page of the forked repository and then go to `settings` -> `general` -> and check the `issues` checkbox under the Features section.
+- Enable `issues` on the forked repository you just created, by navigating to the main page of the forked repository and then go to `settings` -> `general` -> and check the `issues` checkbox under the Features section.
 
 ![image](https://user-images.githubusercontent.com/42116482/174054084-7743e412-cd29-4f83-b984-9ec5d78ca892.png)
 
 
-- Install the Renovate app to your account - go to the [Renovate App GitHub page](https://github.com/apps/renovate), install it, and configure the Repository Access to mark `Only select repositories` and make sure to select the forked RenovateTutorial repo.
-
-![image](https://user-images.githubusercontent.com/42116482/174042280-f4f1212f-19f1-4f97-b747-b1705a8de16f.png)
+- Install the Renovate app to your account - go to the [Renovate App install page](https://github.com/apps/renovate/installations/new), select your account, then choose `Only select repositories` and make sure to select the forked RenovateTutorial repo.
 
 ![image](https://user-images.githubusercontent.com/42116482/173985535-44ccc750-50aa-452b-b9dc-4fafb65bfc75.png)
 
@@ -42,8 +40,8 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 ![image](https://user-images.githubusercontent.com/42116482/174041401-6c6bd26e-48ac-4b97-9522-a5097bd1ad3d.png)
 
 - Merge this pull request. 
-- Upon merging this pull request, a `renovate.json`, which is Renovate’s configuration file, will be created and Renovate will begin working in the background.
-- The `renovate.json` file in your repository will contain a default configuration [preset](https://docs.renovatebot.com/key-concepts/presets/) `config:base`
+- Merging this Pull Request will add a `renovate.json` to the `main` branch, which is Renovate’s configuration file. The presence of this file will mean Renovate begins raising Pull Requests
+- The `renovate.json` file in your repository will contain a default configuration [preset](https://docs.renovatebot.com/key-concepts/presets/) `config:base`. This base config contains sensible defaults which satisfy most users.
 
 ## Perform your first automated Renovate dependency update
 
@@ -57,22 +55,19 @@ There are multiple ways to run Renovate, using CLI, self-hosted server or docker
 - Each update PR consists of:
   - Dependency information (name and version) and its [Merge Confidence](https://docs.renovatebot.com/merge-confidence/) values.
   - Up-to-date release notes.
-  - Configuration related info.
-  - Rebase PR functionality.
+  - Configuration-related info.
+  - Rebase PR checkbox.
   - Link to view renovate logs.
   
 ![image](https://user-images.githubusercontent.com/42116482/173989747-a9ff5a27-ecfc-42eb-a666-4a98d0434821.png)
 
-- Upon decision to merge Renovate’s pull request suggestion to your repository, merge the pull request and the dependency will be updated across your repository. 
-In this case - both package.json file and related yarn.lock file
+- Merge the pull request to update lodash in your `main` branch. Both package.json file and the related yarn.lock file are updated
 
 ![image](https://user-images.githubusercontent.com/42116482/174041127-5f7c3e3d-0722-4858-af67-4cec03bbce93.png)
 
-- Merge this pul request.
-
 ## Dependency Dashboard
 
-- Renovate also has a tool that lets you manually manage and monitor Renovate’s activity in your repository, called the dependency Dashboard.
+- Renovate also has a feature that lets you manually manage and monitor Renovate’s activity in your repository, called the Dependency Dashboard. It's enabled by default with the `config:base` preset
 - Navigate to it, located in the `Issues` section in GitHub.
 - The dependency dashboard includes:
   - Visibility into rejected/deferred updates.
@@ -81,14 +76,12 @@ In this case - both package.json file and related yarn.lock file
   
 ![image](https://user-images.githubusercontent.com/42116482/173993101-12ecdbf8-26e6-4d23-aeae-d00a6c41fbe6.png)
 
-- A user can manually generate the creation of dependency updates directly from the dashboard. 
-- give it a try - under the `Rate Limited` section, check the box next to `Update dependency commander to vX` and navigate to the `Pull requests` section to review the generated PR and merge it to the repo.
-- The dependency dashboard also provides a list of all the detected dependencies and package managers in your repository.
-- You are also capable of re-running Renovate manually directly from the dependency dashboard.
+- A user can manually trigger the creation of dependency updates directly from the dashboard. 
+- Give it a try - under the `Rate Limited` section, check the box next to `Update dependency commander to vX`
+- If you return to the `Pull Requests` menu in your repository you should see the PR appear soon after
 
-##
+The dependency dashboard also provides a list of all the detected dependencies and package managers in your repository. You can also request Renovate runs immediately from the dependency dashboard.
+
 **Congratulations!!!** 
 
-**You have successfully completed the Renovate onboarding and installation tutorial and performed your first Renovate Dependency Update.**
-
-**now its time to configure Renovate to the rest of your repositories and let Renovate do the work.**
+You have successfully completed the Renovate onboarding and installation tutorial and performed your first Renovate Dependency Update.
