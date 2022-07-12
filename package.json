@@ -9,7 +9,7 @@
   "dependencies": {
     "lodash": "4.17.20",
     "commander": "2.20.3",
-    "@mui/system": "5.7.0",
-    "@mui/lab": "5.0.0-alpha.60"
+    "@aws-sdk/client-ec2": "3.112.0",
+    "@aws-sdk/client-ecr": "3.112.0"
   }
 }
