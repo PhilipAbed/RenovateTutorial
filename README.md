@@ -1,87 +1,72 @@
-# Renovate - GitHub hosted app installation & onboarding tutorial
+# Renovate - Hands On Tutorial
+
 
 ## Introduction
 
-Welcome to Renovate’s installation & onboarding tutorial.
 
-In this tutorial you will learn how to install and run renovate, along with some of its basic features.
-
-There are multiple ways to run Renovate, using CLI, self-hosted server or docker, but the easiest way to start with is the [GitHub Renovate App](https://github.com/apps/renovate).
-
-## Installation
-
-- Make sure you are logged in to github.com.
-- Fork [this](https://github.com/PhilipAbed/RenovateTutorial) repository
-- Enable `issues` on the forked repository you just created, by navigating to the main page of the forked repository and then go to `settings` -> `general` -> and check the `issues` checkbox under the Features section.
-
-![image](https://user-images.githubusercontent.com/42116482/174054084-7743e412-cd29-4f83-b984-9ec5d78ca892.png)
+Welcome to the Renovate hands-on tutorial.
 
 
-- Install the Renovate app to your account - go to the [Renovate App install page](https://github.com/apps/renovate/installations/new), select your account, then choose `Only select repositories` and make sure to select the forked RenovateTutorial repo.
+The easiest way to start is using the Renovate GitHub App. you can also run Renovate as a CLI tool or a self-hosted application.
 
-![image](https://user-images.githubusercontent.com/42116482/173985535-44ccc750-50aa-452b-b9dc-4fafb65bfc75.png)
 
-- Note - granting access to all repositories or change repo selections can be modified at anytime on the [Renovate App GitHub page](https://github.com/apps/renovate)
+In this tutorial, you will learn how to configure Renovate to your GitHub account and become familiar with some of Renovate’s basic features.
 
-## Onboarding
 
-- After installing and configuring the Renovate app, an onboarding Renovate Pull Request will be automatically generated. 
-- This PR is there to help you understand Renovate and its default configurations before regular Pull Requests begin.
-- Navigate to the `Pull Requests` section in GitHub, and open the newly generated PR - `Configure Renovate`.
+Although this tutorial is based in the GitHub App, the concepts discussed apply to all environments.
+
+
+What you will learn: 
+1) Installation
+2) Onboarding
+3) Getting to know Renovate’s update PRs
+4) Dependency Dashboard 
+
+
+We will begin this tutorial by providing basic “getting started” information. This includes: Renovate App configuration and installation, default settings, and basic Renovate functionality. 
+
+
+Later, we will dive deeper into functional use-cases, advanced features, and “best practices” capabilities in order to use Renovate to its fullest.
+
+
+## Part 1 - Installation
+
+Let’s start by forking the tutorial repo to your account, installing the Renovate GitHub App, and configuring it to your repo.
  
-![image](https://user-images.githubusercontent.com/42116482/174042743-3e8414d9-b49b-49fd-b70f-8bd425b90240.png)
+1) Make sure you are logged in to GitHub.com
+2) Fork our RenovateTutorial repository. The tutorial instructions will be based on the contents of this repository
+3) The following instructions are directed at those that don’t have Renovate installed:
+   - Install the Renovate App to your account by navigating to the Renovate App GitHub installation page and select Install:
+   ![image](https://user-images.githubusercontent.com/42116482/178490796-f4627b8d-53d9-4d70-ad54-4df5d9df6de1.png)
+4) If you do have Renovate installed:
+   - navigate to the Renovate app page and select configure:
+   ![image](https://user-images.githubusercontent.com/42116482/178491021-a0b7ba34-3bc7-4953-8452-416fbd3d6ec9.png)
+5) You will reach an installation configuration page where you are asked to configure Repository Access. 
 
-- The onboarding PR contains: 
-  - A list of all package files detected in your code, based on Renovate scanning results.
-  - A description of the default configuration settings that will be applied (can be modified later according to the documentation).
-  - What to expect - A list indicating dependency updates PRs that Renovate is about to automatically create.
-  - Link to Renovate’s official [documentation](https://docs.renovatebot.com/).
- 
-![image](https://user-images.githubusercontent.com/42116482/174041401-6c6bd26e-48ac-4b97-9522-a5097bd1ad3d.png)
+   Note - for existing users, installation configuration appears at the bottom of the page.
 
-- Merge this pull request. 
-- Merging this Pull Request will add a `renovate.json` to the `main` branch, which is Renovate’s configuration file. The presence of this file will mean Renovate begins raising Pull Requests
-- The `renovate.json` file in your repository will contain a default configuration [preset](https://docs.renovatebot.com/key-concepts/presets/) `config:base`. This base config contains sensible defaults which satisfy most users.
+   - Mark `Only select repositories` and make sure to select the forked RenovateTutorial repo
+   
+       Note - each selected repo gets an onboarding PR. 
 
-## Perform your first automated Renovate dependency update
+       If you select `all repositories`, forked repos will be skipped by default (including RenovateTutorial). 
+   - click on `install` (“save” for existing users) 
+   
+![image](https://user-images.githubusercontent.com/42116482/178491902-6f6b446a-eb38-45db-9c63-ddf5ba3ac5ba.png)
 
-- After merging the onboarding PR, Renovate is now working on generating update PRs. (PRs may take a couple of minutes to appear)
-- According to Renovate’s default settings, Renovate will create 2 update PRs, based on a rate limit of 2 PRs created per hour, as stated before in the onboarding PR.
-- You should already see notifications for these pull requests in the `Pull Requests` section of the repository.
-- Navigate to it and open the `Update dependency lodash to x.y.z` PR.
 
-![image](https://user-images.githubusercontent.com/42116482/173993509-be38f63d-4dab-4760-9f5d-cee93f6b0fb5.png)
+For new installs:	
+- You will be redirected to our “Thank you for installing Renovate” page while we are setting up your account. 
 
-- Each update PR consists of:
-  - Dependency information (name and version) and its [Merge Confidence](https://docs.renovatebot.com/merge-confidence/) values.
-  - Up-to-date release notes.
-  - Configuration-related info.
-  - Rebase PR checkbox.
-  - Link to view renovate logs.
-  
-![image](https://user-images.githubusercontent.com/42116482/173989747-a9ff5a27-ecfc-42eb-a666-4a98d0434821.png)
+![image](https://user-images.githubusercontent.com/42116482/178492276-ac0f5c03-db21-482c-95e9-07dc229ac298.png)
 
-- Merge the pull request to update lodash in your `main` branch. Both package.json file and the related yarn.lock file are updated
+- After a few seconds, you will be automatically directed to a dashboard where you can login and view the Renovate logs. We recommend saving this link for future use.
 
-![image](https://user-images.githubusercontent.com/42116482/174041127-5f7c3e3d-0722-4858-af67-4cec03bbce93.png)
+![image](https://user-images.githubusercontent.com/42116482/178492370-97532d6e-b9b7-4f95-a793-ed0281bd33e9.png)
 
-## Dependency Dashboard
+Congratulations! You have successfully installed Renovate to your account. 
 
-- Renovate also has a feature that lets you manually manage and monitor Renovate’s activity in your repository, called the Dependency Dashboard. It's enabled by default with the `config:base` preset
-- Navigate to it, located in the `Issues` section in GitHub.
-- The dependency dashboard includes:
-  - Visibility into rejected/deferred updates.
-  - Overview of all updates that are still `to-do` (open, Rate Limited, Pending Approval, Awaiting Schedule, Pending Status Checks).
-  - Information of previously closed PRs. 
-  
-![image](https://user-images.githubusercontent.com/42116482/173993101-12ecdbf8-26e6-4d23-aeae-d00a6c41fbe6.png)
 
-- A user can manually trigger the creation of dependency updates directly from the dashboard. 
-- Give it a try - under the `Rate Limited` section, check the box next to `Update dependency commander to vX`
-- If you return to the `Pull Requests` menu in your repository you should see the PR appear soon after
 
-The dependency dashboard also provides a list of all the detected dependencies and package managers in your repository. You can also request Renovate runs immediately from the dependency dashboard.
 
-**Congratulations!!!** 
 
-You have successfully completed the Renovate onboarding and installation tutorial and performed your first Renovate Dependency Update.
