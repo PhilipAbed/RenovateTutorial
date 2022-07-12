@@ -7,9 +7,9 @@
   "author": "Philip",
   "license": "Apache-2.0",
   "dependencies": {
-    "lodash": "4.17.20",
     "commander": "2.20.3",
-    "@aws-sdk/client-ec2": "3.112.0",
-    "@aws-sdk/client-ecr": "3.112.0"
+    "lodash": "4.17.20",
+	  "@astiamicii/monorepo-example": "1.14.0",
+    "@astiamicii/npm-publish": "1.8.0"
   }
 }
