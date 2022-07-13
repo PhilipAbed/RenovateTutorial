@@ -190,6 +190,8 @@ Let’s begin by creating and enabling the Dependency Dashboard. Since GitHub de
 4) Select `Update dependency php to v8.1` and select `Close pull request`
 5) This will trigger Renovate to run and the Dependency Dashboard will appear under the `Issues` section - navigate to it
 
+Note - it may take a minute to appear.
+
 ### The Dependency Dashboard includes:
   - Overview of all updates that are still to-do:
 
