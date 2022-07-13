@@ -18,9 +18,9 @@ What you will learn:
 4) Dependency Dashboard 
 
 
-We will begin this tutorial by providing basic “getting started” information. This includes: Renovate App configuration and installation, default settings, and basic Renovate functionality. 
+We will begin this tutorial by providing basic `getting started` information. This includes: Renovate App configuration and installation, default settings, and basic Renovate functionality. 
 
-Later, we will dive deeper into functional use-cases, advanced features, and “best practices” capabilities in order to use Renovate to its fullest.
+Later, we will dive deeper into functional use-cases, advanced features, and `best practices` capabilities in order to use Renovate to its fullest.
 
 ## Part 1 - Installation
 
@@ -29,7 +29,7 @@ Let’s start by forking the tutorial repo to your account, installing the Renov
 1) Make sure you are logged in to GitHub.com
 2) Fork our [RenovateTutorial](https://github.com/PhilipAbed/RenovateTutorial) repository. The tutorial instructions will be based on the contents of this repository
 3) The following instructions are directed at those that don’t have Renovate installed:
-   - Install the Renovate App to your account by navigating to the Renovate App GitHub installation page and select Install:
+   - Install the Renovate App to your account by navigating to the [Renovate App](https://github.com/apps/renovate) GitHub installation page and select Install:
    ![image](https://user-images.githubusercontent.com/42116482/178490796-f4627b8d-53d9-4d70-ad54-4df5d9df6de1.png)
 4) If you do have Renovate installed:
    - navigate to the Renovate app page and select configure:
@@ -152,7 +152,7 @@ Let’s go ahead and take a look at a Renovate update PR:
 
 ![image](https://user-images.githubusercontent.com/42116482/178495994-7cce93f1-db65-4f09-b682-7506dc242fdc.png)
 
-- Renovate’s update PRs will update the relevant dependency across your entire repo. In our RenovateTutorial repo, this will be both the package.json file and the yarn.lock file:
+- Renovate’s update PRs will update the relevant dependency across your entire repo. In our RenovateTutorial repo, this will be both the `package.json` file and the `package-lock.json` file:
 
 ![image](https://user-images.githubusercontent.com/42116482/178496208-81bb23b4-0da7-43eb-8d60-8a9bfe7aed3d.png)
 
@@ -221,7 +221,7 @@ Let’s dive into one of the dependency dashboard capabilities - the Pending App
 
 To demonstrate this change in configuration, we need a dependency with a major update available. In our RenovateTutorial repo, the `commander` dependency fits that description. Since we already have an open PR for `commander`, we will perform a small work-around to rebase the update PR and have it appear immediately in the Dependency Dashboard:
 
-1) Go to the “Pull requests” section and open `Update dependency commander to vX`
+1) Go to the `Pull requests` section and open `Update dependency commander to vX`
 
 2) Change the PR title as you like (if the title is not changed, Renovate will not re-open the PR after we close it in the next step):
 
