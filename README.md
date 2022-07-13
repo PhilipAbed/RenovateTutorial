@@ -245,11 +245,13 @@ To demonstrate this change in configuration, we need a dependency with a major u
 
 5) Now go back to the Dependency Dashboard in the Issues section and re-run Renovate. 
 
-  As you can see, after the run is complete, `commander` major update PR now appears under the **Pending Approval** section and will not be opened unless manually triggered
+6) As you can see, `commander` major update PR now appears under the **Pending Approval** section and will not be opened unless manually triggered
 
-6) You can now manually open this PR by checking the box next to it
+     Note - it make take a minute to complete Renovate's run
 
-7) Navigate to the `Pull requests` section to review the generated PR and merge it to the repo.
+7) You can now manually open this PR by checking the box next to it
+
+8) Navigate to the `Pull requests` section to review the generated PR and merge it to the repo.
 
 **Congratulations! You are now familiar with Renovate’s Dependency Dashboard.** 🎈
 
