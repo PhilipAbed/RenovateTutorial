@@ -9,7 +9,7 @@
   "dependencies": {
     "commander": "2.20.3",
     "lodash": "4.17.20",
-	  "@astiamicii/monorepo-example": "1.14.0",
-    "@astiamicii/npm-publish": "1.8.0"
+    "@date-io/date-fns": "2.10.0",
+    "@date-io/moment": "2.10.0"
   }
 }
