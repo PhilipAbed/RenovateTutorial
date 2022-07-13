@@ -95,7 +95,7 @@ Note - Renovate will not create dependency update PRs until the onboarding PR wi
    - Enables creation of the “Dependency Dashboard” - a dashboard that shows an overview of the state of your repositories' dependencies.
    - PRs will be created at a rate of 2 PRs per hour.
    - The limit of simultaneous open Renovate PRs is set to 10.
-   - Renovate automatically groups known monorepo packages to a single PR (example can be seen in the `date-io` PR under the `what to expect` section).
+   - Renovate automatically groups known monorepo packages to a single PR (example can be seen in the `date-io` PR under the **what to expect** section).
 
 Renovate offers the ability to change configurations before merging the onboarding PR as well as preview the results of these changes. At this point, Renovate has created a branch called renovate/configure which contains the `renovate.json` configuration file. By default, Renovate limits branch creation to 2 per hour:
 
