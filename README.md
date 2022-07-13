@@ -1,4 +1,4 @@
-# Renovate - Hands On Tutorial ( first draft)
+# Renovate - Hands On Tutorial
 
 
 ## Introduction
