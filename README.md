@@ -57,7 +57,7 @@ For new installs:
 
 ![image](https://user-images.githubusercontent.com/42116482/178492370-97532d6e-b9b7-4f95-a793-ed0281bd33e9.png)
 
-**Congratulations! You have successfully installed Renovate to your account.**
+**Congratulations! You have successfully installed Renovate to your account.** 🎈
 
 
 ## Part 2 - Onboarding
@@ -125,7 +125,7 @@ As a user, despite Renovate’s suggestion to limit hourly PR creation to 2, we 
 5) Revisit the onboarding PR and notice how the onboarding PR automatically updates to reflect the changes you made to the configuration 
 6) Merge the onboarding pull request.
 
-**Congratulations! You have successfully onboarded Renovate.**
+**Congratulations! You have successfully onboarded Renovate.** 🎈
 
 ## Part 3 - Getting to know Renovate’s update PRs
 
@@ -140,6 +140,7 @@ Here we will review the basic concepts of Renovate update PRs and merge it.
 
 Let’s go ahead and take a look at a Renovate update PR:
 1) Navigate to the `Pull requests` section and open - `Update dependency lodash to x.y.z`
+
 ![image](https://user-images.githubusercontent.com/42116482/178495779-fae0cb03-be56-4cac-a3c5-70de4e20a40f.png)
 
 ### Each update PR contains:
@@ -168,7 +169,7 @@ Let’s go ahead and take a look at a Renovate update PR:
 >
 >  All the above and more will be discussed in future parts of the tutorial.
 
-**Congratulations! You have now updated your first dependency with Renovate.**
+**Congratulations! You have now updated your first dependency with Renovate.** 🎈
 
 ## Part 4 - Dependency Dashboard
 
@@ -209,7 +210,9 @@ You can also re-run the Renovate bot manually directly from the Dependency Dashb
 
  ![image](https://user-images.githubusercontent.com/42116482/178509789-3ebfe3c7-b0b1-4041-85df-8e5da0cd4c4c.png)
 
-Let’s dive into one of the dependency dashboard capabilities - **the Pending Approval feature**. Say we want to take extra measures before updating major versions of a package (either to reduce noise or to handle it more carefully). Renovate offers an option to prevent automatic creation of major version update PRs and create such PRs only upon manual request from the Dependency Dashboard. In order to limit all major updates to on-demand creation:
+Let’s dive into one of the dependency dashboard capabilities - **the Pending Approval feature**. 
+
+Say we want to take extra measures before updating major versions of a package (either to reduce noise or to handle it more carefully). Renovate offers an option to prevent automatic creation of major version update PRs and create such PRs only upon manual request from the Dependency Dashboard. In order to limit all major updates to on-demand creation:
 
 1) Add this code segment to your `renovate.json` file:
 ```
@@ -260,8 +263,10 @@ To demonstrate this change in configuration, we need a dependency with a major u
 
 ### Now, it's time to configure Renovate on the rest of your repositories and let Renovate manage your dependencies' health.
 
-**Upcoming Tutorials**
+### Upcoming Tutorials:
+
 We have more advanced Renovate tutorials in the pipeline and will post updates when they are published.
+
 What’s coming next?
   - Merge confidence
   - Auto Merge
