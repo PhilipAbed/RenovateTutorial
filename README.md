@@ -95,7 +95,7 @@ Note - Renovate will not create dependency update PRs until the onboarding PR wi
    - Enables creation of the “Dependency Dashboard” - a dashboard that shows an overview of the state of your repositories' dependencies.
    - PRs will be created at a rate of 2 PRs per hour.
    - The limit of simultaneous open Renovate PRs is set to 10.
-   - Renovate automatically groups known monorepo packages to a single PR (example can be seen in the 'what to expect' section).
+   - Renovate automatically groups known monorepo packages to a single PR (example can be seen in the `date-io` PR under the `what to expect` section).
 
 Renovate offers the ability to change configurations before merging the onboarding PR as well as preview the results of these changes. At this point, Renovate has created a branch called renovate/configure which contains the `renovate.json` configuration file. By default, Renovate limits branch creation to 2 per hour:
 
@@ -125,7 +125,7 @@ As a user, despite Renovate’s suggestion to limit hourly PR creation to 2, we 
 5) Revisit the onboarding PR and notice how the onboarding PR automatically updates to reflect the changes you made to the configuration 
 6) Merge the onboarding pull request.
 
-Congratulations! You have successfully onboarded Renovate.
+**Congratulations! You have successfully onboarded Renovate.**
 
 ## Part 3 - Getting to know Renovate’s update PRs
 
@@ -136,7 +136,7 @@ Note - PRs may take a couple of minutes to appear
 Here we will review the basic concepts of Renovate update PRs and merge it.
 
 - By default, Renovate will create up to 2 update PRs per hour. However, if you completed the onboarding section of this tutorial, Renovate will now create 3 PRs.
-- You should already see notifications for these pull requests in the Pull Requests section of the repo.
+- You should already see notifications for these pull requests in the `Pull Requests` section of the repo.
 
 Let’s go ahead and take a look at a Renovate update PR:
 1) Navigate to the `Pull requests` section and open - `Update dependency lodash to x.y.z`
@@ -144,7 +144,7 @@ Let’s go ahead and take a look at a Renovate update PR:
 
 ### Each update PR contains:
 - Dependency information (name and version changes)
-- Merge Confidence values
+- [Merge Confidence](https://docs.renovatebot.com/merge-confidence/) values
 - Up-to-date release notes
 - Renovate configuration-related info
 - Option to rebase PR
@@ -158,45 +158,48 @@ Let’s go ahead and take a look at a Renovate update PR:
 
 2) Merge this pull request
 
-Note - Renovate is highly configurable and supports:
+>Note - Renovate is highly configurable and supports:
+>
+>- On-demand PR creation.
+>- Automatic merging of PRs.
+>- Settings for specific dependencies/package managers.
+>- Scheduling.
+>- Grouping. 
+>
+>  All the above and more will be discussed in future parts of the tutorial.
 
-- On-demand PR creation.
-- Automatic merging of PRs.
-- Settings for specific dependencies/package managers.
-- Scheduling.
-- Grouping. 
-
-  All the above and more will be discussed in future parts of the tutorial.
-
-Congratulations! You have now updated your first dependency with Renovate.
+**Congratulations! You have now updated your first dependency with Renovate.**
 
 ## Part 4 - Dependency Dashboard
 
 Renovate’s Dependency Dashboard is a GitHub Issue that enables you to manage and monitor Renovate’s activity in your repo. In this section, we will go over some of its main functionalities and capabilities.
-Let’s begin by creating and enabling the Dependency Dashboard. Since GitHub defaults to disable issues on forked repositories, we need to enable it on the forked RenovateTutorial repo:
-1) Navigate to the main page of the repo and go to settings -> general
-2) Check the issues checkbox under the Features section:
+
+Let’s begin by creating and enabling the Dependency Dashboard. Since GitHub defaults to disable `issues` on forked repositories, we need to enable it on the forked RenovateTutorial repo:
+
+1) Navigate to the main page of the repo and go to `settings` -> `general`
+2) Check the `issues` checkbox under the Features section:
 
 ![image](https://user-images.githubusercontent.com/42116482/178508319-32c3ef67-c030-4965-b0d8-773589dbf474.png)
 
 - In order for the Dependency Dashboard to become available, we will need to re-run Renovate by triggering a webhook (for example, closing an update PR).
-Note - This is usually done in a click via the Dependency Dashboard.
+  
+  Note - This is usually done in a click via the Dependency Dashboard.
 
 3) Go to the `Pull requests` section
 4) Select `Update dependency php to v8.1` and select `Close pull request`
-5) This will trigger Renovate to run and the Dependency Dashboard will appear under the Issues section - navigate to it
+5) This will trigger Renovate to run and the Dependency Dashboard will appear under the `Issues` section - navigate to it
 
 ### The Dependency Dashboard includes:
   - Overview of all updates that are still to-do:
 
-    - `Open` PRs
-    - `Rate Limited` - PRs blocked by rate limit setting and will be opened based on preferences.
-    - `Pending Approval` - PRs that require manual triggering based on configurations.
-    - `Awaiting Schedule` - PRs creation blocked by Renovate scheduling settings.
-    - `Pending Status Checks` - updates that await pending status checks in order to be created.
+    - **Open** PRs
+    - **Rate Limited** - PRs blocked by rate limit setting and will be opened based on preferences.
+    - **Pending Approval** - PRs that require manual triggering based on configurations.
+    - **Awaiting Schedule** - PRs creation blocked by Renovate scheduling settings.
+    - **Pending Status Checks** - updates that await pending status checks in order to be created.
   
-  - Visibility into `rejected/deferred updates`.
-  - List of all the detected dependencies and package managers in your repository.
+  - Visibility into **rejected/deferred updates**.
+  - List of all the **detected dependencies** and **package managers** in your repository.
   
   ![image](https://user-images.githubusercontent.com/42116482/178509682-3d772940-fe94-4338-ad1d-f7c4ef36fe6c.png)
 
@@ -206,7 +209,7 @@ You can also re-run the Renovate bot manually directly from the Dependency Dashb
 
  ![image](https://user-images.githubusercontent.com/42116482/178509789-3ebfe3c7-b0b1-4041-85df-8e5da0cd4c4c.png)
 
-Let’s dive into one of the dependency dashboard capabilities - the Pending Approval feature. Say we want to take extra measures before updating major versions of a package (either to reduce noise or to handle it more carefully). Renovate offers an option to prevent automatic creation of major version update PRs and create such PRs only upon manual request from the Dependency Dashboard. In order to limit all major updates to on-demand creation:
+Let’s dive into one of the dependency dashboard capabilities - **the Pending Approval feature**. Say we want to take extra measures before updating major versions of a package (either to reduce noise or to handle it more carefully). Renovate offers an option to prevent automatic creation of major version update PRs and create such PRs only upon manual request from the Dependency Dashboard. In order to limit all major updates to on-demand creation:
 
 1) Add this code segment to your `renovate.json` file:
 ```
@@ -217,7 +220,7 @@ Let’s dive into one of the dependency dashboard capabilities - the Pending App
     }
   ]
 ```
-2) commit the changes
+2) Commit the changes
 
 To demonstrate this change in configuration, we need a dependency with a major update available. In our RenovateTutorial repo, the `commander` dependency fits that description. Since we already have an open PR for `commander`, we will perform a small work-around to rebase the update PR and have it appear immediately in the Dependency Dashboard:
 
@@ -235,15 +238,15 @@ To demonstrate this change in configuration, we need a dependency with a major u
 
 ![image](https://user-images.githubusercontent.com/42116482/178510601-961c174a-2161-43c7-82e7-6f1a117b8494.png)
 
-5) Now go back to the Dependency Dashboard in the Issues section and re-run Renovate. As you can see, commander major update PR now appears under the “Pending Approval” section and will not be opened unless manually triggered
+5) Now go back to the Dependency Dashboard in the Issues section and re-run Renovate. As you can see, `commander` major update PR now appears under the **Pending Approval** section and will not be opened unless manually triggered
 
 6) You can now manually open this PR by checking the box next to it
 
-7) Navigate to the Pull requests section to review the generated PR and merge it to the repo.
+7) Navigate to the `Pull requests` section to review the generated PR and merge it to the repo.
 
-Congratulations! You are now familiar with Renovate’s Dependency Dashboard. 🎈
+**Congratulations! You are now familiar with Renovate’s Dependency Dashboard.** 🎈
 
-What have we learned so far:
+## What have we learned so far:
   - How to install Renovate
   - Onboarding Renovate by reviewing, configuring, and merging the onboarding PR
   - How to update a dependency with Renovate
@@ -254,9 +257,10 @@ What have we learned so far:
   - Renovate configuration can be modified by manual configurations, global organization configurations and existing Renovate presets.
 
 ### Congratulations! You have successfully completed Renovate’s hands-on tutorial and have taken your first steps to automate dependency updates in your projects.
+
 ### Now, it's time to configure Renovate on the rest of your repositories and let Renovate manage your dependencies' health.
 
-Upcoming Tutorials
+**Upcoming Tutorials**
 We have more advanced Renovate tutorials in the pipeline and will post updates when they are published.
 What’s coming next?
   - Merge confidence
@@ -268,7 +272,6 @@ What’s coming next?
   - GitHub actions
   - Assignees and reviewers
   - Regex Managers
-Feel free to also take a look at our published user stories.
 
 
 
