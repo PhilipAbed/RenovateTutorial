@@ -29,10 +29,10 @@ Let’s start by forking the tutorial repo to your account, installing the Renov
 1) Make sure you are logged in to GitHub.com
 2) Fork our [RenovateTutorial](https://github.com/PhilipAbed/RenovateTutorial) repository. The tutorial instructions will be based on the contents of this repository
 3) The following instructions are directed at those that don’t have Renovate installed:
-   - Install the Renovate App to your account by navigating to the [Renovate App](https://github.com/apps/renovate) GitHub installation page and select Install:
+   - Install the Renovate App to your account by navigating to the [Renovate App GitHub installation page](https://github.com/apps/renovate) and select Install:
    ![image](https://user-images.githubusercontent.com/42116482/178490796-f4627b8d-53d9-4d70-ad54-4df5d9df6de1.png)
 4) If you do have Renovate installed:
-   - navigate to the Renovate app page and select configure:
+   - navigate to the [Renovate app page](https://github.com/apps/renovate) and select configure:
    ![image](https://user-images.githubusercontent.com/42116482/178491021-a0b7ba34-3bc7-4953-8452-416fbd3d6ec9.png)
 5) You will reach an installation configuration page where you are asked to configure Repository Access. 
 
@@ -42,8 +42,8 @@ Let’s start by forking the tutorial repo to your account, installing the Renov
    
        Note - each selected repo gets an onboarding PR. 
 
-       If you select `all repositories`, forked repos will be skipped by default (including RenovateTutorial). 
-   - click on `install` (“save” for existing users) 
+       If you select `All repositories`, forked repos will be skipped by default (including RenovateTutorial). 
+   - click on `Install` (“Save” for existing users) 
    
 ![image](https://user-images.githubusercontent.com/42116482/178491902-6f6b446a-eb38-45db-9c63-ddf5ba3ac5ba.png)
 
@@ -57,7 +57,7 @@ For new installs:
 
 ![image](https://user-images.githubusercontent.com/42116482/178492370-97532d6e-b9b7-4f95-a793-ed0281bd33e9.png)
 
-Congratulations! You have successfully installed Renovate to your account. 
+**Congratulations! You have successfully installed Renovate to your account.**
 
 
 ## Part 2 - Onboarding
@@ -82,11 +82,11 @@ Now let’s review the onboarding PR -
 
 #### The onboarding PR contains:
 
-   - Detected Package Files - All package files detected by Renovate in your code.
-   - Configuration Summary - The default configuration settings that will be applied.
-   - What to Expect - The dependency update PRs that Renovate is about to automatically create.
-   - The link to Renovate’s official documentation.
-   - The link to review jobs logs in the Renovate dashboard.
+   - **Detected Package Files** - All package files detected by Renovate in your code.
+   - **Configuration Summary** - The default configuration settings that will be applied.
+   - **What to Expect** - The dependency update PRs that Renovate is about to automatically create.
+   - The link to Renovate’s official [documentation](https://docs.renovatebot.com/).
+   - The link to review jobs logs in the [Renovate dashboard](https://app.renovatebot.com/dashboard).
    
 Note - Renovate will not create dependency update PRs until the onboarding PR will be merged.
 
@@ -95,7 +95,7 @@ Note - Renovate will not create dependency update PRs until the onboarding PR wi
    - Enables creation of the “Dependency Dashboard” - a dashboard that shows an overview of the state of your repositories' dependencies.
    - PRs will be created at a rate of 2 PRs per hour.
    - The limit of simultaneous open Renovate PRs is set to 10.
-   - Renovate automatically groups known monorepo packages to a single PR.
+   - Renovate automatically groups known monorepo packages to a single PR (example can be seen in the 'what to expect' section).
 
 Renovate offers the ability to change configurations before merging the onboarding PR as well as preview the results of these changes. At this point, Renovate has created a branch called renovate/configure which contains the `renovate.json` configuration file. By default, Renovate limits branch creation to 2 per hour:
 
