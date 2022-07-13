@@ -243,7 +243,9 @@ To demonstrate this change in configuration, we need a dependency with a major u
 
 ![image](https://user-images.githubusercontent.com/42116482/178510601-961c174a-2161-43c7-82e7-6f1a117b8494.png)
 
-5) Now go back to the Dependency Dashboard in the Issues section and re-run Renovate. As you can see, `commander` major update PR now appears under the **Pending Approval** section and will not be opened unless manually triggered
+5) Now go back to the Dependency Dashboard in the Issues section and re-run Renovate. 
+
+  As you can see, after the run is complete, `commander` major update PR now appears under the **Pending Approval** section and will not be opened unless manually triggered
 
 6) You can now manually open this PR by checking the box next to it
 
