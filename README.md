@@ -5,7 +5,7 @@
 
 Welcome to the Renovate hands-on tutorial.
 
-The easiest way to start is using the Renovate GitHub App. you can also run Renovate as a CLI tool or a self-hosted application.
+The easiest way to start is using the [Renovate GitHub App](https://github.com/apps/renovate). you can also run Renovate as a CLI tool or a self-hosted application.
 
 In this tutorial, you will learn how to configure Renovate to your GitHub account and become familiar with some of Renovate’s basic features.
 
