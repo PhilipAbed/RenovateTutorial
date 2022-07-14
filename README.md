@@ -36,11 +36,13 @@ Let’s start by forking the tutorial repo to your account, installing the Renov
    ![image](https://user-images.githubusercontent.com/42116482/178491021-a0b7ba34-3bc7-4953-8452-416fbd3d6ec9.png)
 5) You will reach an installation configuration page where you are asked to configure Repository Access. 
 
-   Note - for existing users, installation configuration appears at the bottom of the page.
+> **Note**
+> for existing users, installation configuration appears at the bottom of the page.
 
    - Mark `Only select repositories` and make sure to select the forked RenovateTutorial repo
    
-       Note - each selected repo gets an onboarding PR. 
+       > **Note**
+       > each selected repo gets an onboarding PR. 
 
        If you select `All repositories`, forked repos will be skipped by default (including RenovateTutorial). 
    - click on `Install` (“Save” for existing users) 
@@ -66,7 +68,8 @@ Now that you have Renovate installed, we can begin onboarding.
 
 Let’s review the concepts of the Onboarding PR and learn about Renovate’s initial settings.
 
-Note - For your convenience, Renovate will not make any changes to your repo or raise PRs until after you finish onboarding. 
+> **Note**
+> For your convenience, Renovate will not make any changes to your repo or raise PRs until after you finish onboarding.
 
 - Upon installing Renovate, an onboarding PR will be automatically generated.
 - This PR is there to help you understand Renovate and its default settings before Renovate starts running on your repository.
@@ -88,7 +91,9 @@ Now let’s review the onboarding PR -
    - The link to Renovate’s official [documentation](https://docs.renovatebot.com/).
    - The link to review jobs logs in the [Renovate dashboard](https://app.renovatebot.com/dashboard).
    
-Note - Renovate will not create dependency update PRs until the onboarding PR will be merged.
+> **Note**
+> Renovate will not create dependency update PRs until the onboarding PR will be merged.
+
 
 #### These are some of the default configurations of Renovate:
 
@@ -131,7 +136,8 @@ As a user, despite Renovate’s suggestion to limit hourly PR creation to 2, we 
 
 Now that you have merged the onboarding PR, Renovate will generate Update PRs to the most recent dependency version based on your configuration. 
 
-Note - PRs may take a couple of minutes to appear
+> **Note**
+> PRs may take a couple of minutes to appear
 
 Here we will review the basic concepts of Renovate update PRs and merge it.
 
@@ -184,13 +190,17 @@ Let’s begin by creating and enabling the Dependency Dashboard. Since GitHub de
 
 - In order for the Dependency Dashboard to become available, we will need to re-run Renovate by triggering a webhook (for example, closing an update PR).
   
-  Note - This is usually done in a click via the Dependency Dashboard.
+> **Note**
+> This is usually done in a click via the Dependency Dashboard.
+
 
 3) Go to the `Pull requests` section
 4) Select `Update dependency php to v8.1` and select `Close pull request`
 5) This will trigger Renovate to run and the Dependency Dashboard will appear under the `Issues` section - navigate to it
 
-Note - it may take a minute to appear.
+> **Note**
+> it may take a minute to appear.
+
 
 ### The Dependency Dashboard includes:
   - Overview of all updates that are still to-do:
@@ -211,6 +221,8 @@ Users can manually trigger the creation of dependency updates directly from the 
 You can also re-run the Renovate bot manually directly from the Dependency Dashboard by enabling the “Check this box to trigger a request Renovate to run again on this repository” option:
 
  ![image](https://user-images.githubusercontent.com/42116482/178509789-3ebfe3c7-b0b1-4041-85df-8e5da0cd4c4c.png)
+ 
+- 
 
 Let’s dive into one of the dependency dashboard capabilities - **the Pending Approval feature**. 
 
@@ -247,7 +259,8 @@ To demonstrate this change in configuration, we need a dependency with a major u
 
 6) As you can see, `commander` major update PR now appears under the **Pending Approval** section and will not be opened unless manually triggered
 
-     Note - it make take a minute to complete Renovate's run
+     > **Note**
+     > it make take a minute to complete Renovate's run 
 
 7) You can now manually open this PR by checking the box next to it
 
