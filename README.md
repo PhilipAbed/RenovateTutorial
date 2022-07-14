@@ -30,7 +30,7 @@ Let’s start by forking the tutorial repo to your account, installing the Renov
 2) Fork this [RenovateTutorial](https://github.com/PhilipAbed/RenovateTutorial) repository. The tutorial instructions will be based on the contents of this repository
 3) The following instructions are directed at those that don’t have Renovate installed:
    - Install the Renovate App to your account by navigating to the [Renovate App GitHub installation page](https://github.com/apps/renovate) and select Install:
-   ![image](https://user-images.githubusercontent.com/42116482/178490796-f4627b8d-53d9-4d70-ad54-4df5d9df6de1.png)
+   ![image](https://user-images.githubusercontent.com/102745725/178965463-525a385e-d914-4309-aeb4-cb4358dc12bc.png)
 4) If you do have Renovate installed:
    - navigate to the [Renovate app page](https://github.com/apps/renovate) and select configure:
    ![image](https://user-images.githubusercontent.com/42116482/178491021-a0b7ba34-3bc7-4953-8452-416fbd3d6ec9.png)
@@ -45,9 +45,9 @@ Let’s start by forking the tutorial repo to your account, installing the Renov
        > each selected repo gets an onboarding PR. 
 
        If you select `All repositories`, forked repos will be skipped by default (including RenovateTutorial). 
-   - click on `Install` (“Save” for existing users) 
-   
-![image](https://user-images.githubusercontent.com/42116482/178491902-6f6b446a-eb38-45db-9c63-ddf5ba3ac5ba.png)
+   - click on `Install` (“Save” for existing users)
+
+<img width="629" alt="configuration page" src="https://user-images.githubusercontent.com/102745725/178964980-df55dafd-f087-433a-90f7-986fa01c1ac0.png">
 
 
 For new installs:	
@@ -78,9 +78,9 @@ Let’s review the concepts of the Onboarding PR and learn about Renovate’s in
 Now let’s review the onboarding PR - 
 1) Navigate to the `Pull Requests` section in GitHub, and open the newly generated PR - `Configure Renovate`
 
-![image](https://user-images.githubusercontent.com/42116482/178493669-d905570e-7a87-4990-a4c3-c71f1185edff.png)
+<img width="1500" alt="onboarding PR" src="https://user-images.githubusercontent.com/102745725/178965966-76aa3941-cac4-4df3-bd89-75b9f8002924.png">
 
-![image](https://user-images.githubusercontent.com/42116482/178493786-6f3ff65b-32b3-4c50-8368-c1799cdbcb84.png)
+<img width="935" alt="onboarding content" src="https://user-images.githubusercontent.com/102745725/178966039-b11315b8-8c75-416b-9f18-c8109c17d0ab.png">
 
 
 #### The onboarding PR contains:
@@ -112,7 +112,7 @@ As a user, despite Renovate’s suggestion to limit hourly PR creation to 2, we 
 
 1) Go to the newly created branch - `renovate/configure`:
 
-![image](https://user-images.githubusercontent.com/42116482/178494805-a3f7c209-a683-4fa9-8e75-dfe63e5d0e56.png)
+<img width="763" alt="new branch" src="https://user-images.githubusercontent.com/102745725/178966974-35c089c6-4190-4721-b1c2-956d84e80d07.png">
 
 2) Go into the `renovate.json` file:
 
@@ -124,7 +124,7 @@ As a user, despite Renovate’s suggestion to limit hourly PR creation to 2, we 
   "prHourlyLimit": 3
 }
 ```
-![image](https://user-images.githubusercontent.com/42116482/178495049-06a93b8d-ba82-44a2-a837-1b35c8351838.png)
+<img width="591" alt="change in config 1" src="https://user-images.githubusercontent.com/102745725/178967120-51ec5940-42bc-444e-8c4d-b98ea4ee5948.png">
 
 4) Commit the changes
 5) Revisit the onboarding PR and notice how the onboarding PR automatically updates to reflect the changes you made to the configuration 
@@ -153,7 +153,7 @@ Here we will review the basic concepts of Renovate update PRs and merge it.
 Let’s go ahead and take a look at a Renovate update PR:
 1) Navigate to the `Pull requests` section and open - `Update dependency lodash to x.y.z`
 
-![image](https://user-images.githubusercontent.com/42116482/178495779-fae0cb03-be56-4cac-a3c5-70de4e20a40f.png)
+<img width="1256" alt="open PRs" src="https://user-images.githubusercontent.com/102745725/178967929-690b3866-190b-4576-a961-981ce78cbd1b.png">
 
 ### Each update PR contains:
 - Dependency information (name and version changes)
@@ -167,7 +167,7 @@ Let’s go ahead and take a look at a Renovate update PR:
 
 - Renovate’s update PRs will update the relevant dependency across your entire repo. In our RenovateTutorial repo, this will be both the `package.json` file and the `package-lock.json` file:
 
-![image](https://user-images.githubusercontent.com/42116482/178496208-81bb23b4-0da7-43eb-8d60-8a9bfe7aed3d.png)
+<img width="1488" alt="file diff lodash" src="https://user-images.githubusercontent.com/102745725/178968020-865560f7-173c-4e9e-a073-488147dbb137.png">
 
 2) Merge this pull request
 
@@ -192,7 +192,7 @@ Let’s begin by creating and enabling the Dependency Dashboard. Since GitHub de
 1) Navigate to the main page of the repo and go to `settings` -> `general`
 2) Check the `issues` checkbox under the Features section:
 
-![image](https://user-images.githubusercontent.com/42116482/178508319-32c3ef67-c030-4965-b0d8-773589dbf474.png)
+<img width="1284" alt="issues settings" src="https://user-images.githubusercontent.com/102745725/178968523-fb002cf1-2510-4b4f-b840-f9776e660d92.png">
 
 - In order for the Dependency Dashboard to become available, we will need to re-run Renovate by triggering a webhook (for example, closing an update PR).
   
@@ -202,6 +202,9 @@ Let’s begin by creating and enabling the Dependency Dashboard. Since GitHub de
 
 3) Go to the `Pull requests` section
 4) Select `Update dependency php to v8.1` and select `Close pull request`
+
+<img width="927" alt="close php" src="https://user-images.githubusercontent.com/102745725/178969009-7239db99-4abe-44d1-a86c-a0effdf6fb7a.png">
+
 5) This will trigger Renovate to run and the Dependency Dashboard will appear under the `Issues` section - navigate to it
 
 > **Note**
@@ -220,13 +223,13 @@ Let’s begin by creating and enabling the Dependency Dashboard. Since GitHub de
   - Visibility into **rejected/deferred updates**.
   - List of all the **detected dependencies** and **package managers** in your repository.
   
-  ![image](https://user-images.githubusercontent.com/42116482/178509682-3d772940-fe94-4338-ad1d-f7c4ef36fe6c.png)
+  <img width="942" alt="Screen Shot 2022-07-14 at 14 05 40" src="https://user-images.githubusercontent.com/102745725/178968912-24ef22ec-fc98-4bf1-a293-9fb5dbf4c1b8.png">
 
 Users can manually trigger the creation of dependency updates directly from the dashboard. 
 
 You can also re-run the Renovate bot manually directly from the Dependency Dashboard by enabling the “Check this box to trigger a request Renovate to run again on this repository” option:
 
- ![image](https://user-images.githubusercontent.com/42116482/178509789-3ebfe3c7-b0b1-4041-85df-8e5da0cd4c4c.png)
+ <img width="867" alt="rerun renovate" src="https://user-images.githubusercontent.com/102745725/178969114-c1b64333-b45a-4508-b638-1e25ad0adab5.png">
  
 
 Let’s dive into one of the dependency dashboard capabilities - **the Pending Approval feature**. 
