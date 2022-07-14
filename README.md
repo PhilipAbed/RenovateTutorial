@@ -37,13 +37,11 @@ Let’s start by forking the tutorial repo to your account, installing the Renov
 5) You will reach an installation configuration page where you are asked to configure Repository Access. 
 
 > **Note**
-> 
 > for existing users, installation configuration appears at the bottom of the page.
 
    - Mark `Only select repositories` and make sure to select the forked RenovateTutorial repo
    
        > **Note**
-       > 
        > each selected repo gets an onboarding PR. 
 
        If you select `All repositories`, forked repos will be skipped by default (including RenovateTutorial). 
