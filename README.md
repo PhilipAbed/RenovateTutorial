@@ -3,13 +3,14 @@
 
 ## Introduction
 
-Welcome to the Renovate hands-on tutorial.
+Welcome to the Renovate hands-on tutorial. This tutorial is based on the [Renovate GitHub App](https://github.com/apps/renovate), but you can also run Renovate as a CLI tool or a self-hosted application.
 
-This tutorial is based on the [Renovate GitHub App](https://github.com/apps/renovate). you can also run Renovate as a CLI tool or a self-hosted application.
+> **Note**
+> Although this tutorial is based in the GitHub App, the concepts discussed apply to all environments.
 
-In this tutorial, you will learn how to configure Renovate to your GitHub account and become familiar with some of Renovate’s basic features.
+In this tutorial, you will learn how to configure Renovate and become familiar with some of the basic features.
 
-Although this tutorial is based in the GitHub App, the concepts discussed apply to all environments.
+
 
 What you will learn: 
 1) Installation
@@ -18,9 +19,9 @@ What you will learn:
 4) Dependency Dashboard 
 
 
-We will begin this tutorial by providing basic `getting started` information. This includes: Renovate App configuration and installation, default settings, and basic Renovate functionality. 
+We will begin this tutorial with configuring and installing the Renovate App and an overview of the default settings and basic functionalities. 
 
-Later, we will dive deeper into functional use-cases, advanced features, and `best practices` capabilities in order to use Renovate to its fullest.
+Later, we will dive deeper into functional use-cases, advanced features, and `best practices` so you'll know how to leverage Renovate to its fullest.
 
 ## Part 1 - Installation
 
@@ -57,7 +58,7 @@ For new installs:
 
 - After a few seconds, you will be automatically directed to a dashboard where you can login and view the Renovate logs. We recommend saving this link for future use.
 
-<img width="625" alt="Screen Shot 2022-07-14 at 14 24 26" src="https://user-images.githubusercontent.com/102745725/178972035-abe2e859-0756-498c-91d5-ec2f0cfdd503.png">
+
 
 **Congratulations! You have successfully installed Renovate to your account.** 🎈
 
