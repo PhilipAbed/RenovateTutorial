@@ -1,7 +1,7 @@
 {
   "name": "renovate_tutorial",
   "version": "0.0.1",
-  "description": "a simple package json for renovate tutorial use only",
+  "description": "A simple package json for Renovate tutorial use only",
   "main": "index.js",
   "repository": "https://someDummygit/myOrg/myRepo.git",
   "author": "Philip",
