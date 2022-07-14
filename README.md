@@ -128,6 +128,12 @@ As a user, despite Renovate’s suggestion to limit hourly PR creation to 2, we 
 
 4) Commit the changes
 5) Revisit the onboarding PR and notice how the onboarding PR automatically updates to reflect the changes you made to the configuration 
+
+<img width="830" alt="onboarding warning hourly update" src="https://user-images.githubusercontent.com/102745725/178960884-40077a5c-8fe1-422f-81c1-567ea1e6619b.png">
+
+> **Note**
+> May take a minute to appear
+
 6) Merge the onboarding pull request.
 
 **Congratulations! You have successfully onboarded Renovate.** 🎈
@@ -231,7 +237,18 @@ You can also re-run the Renovate bot manually directly from the Dependency Dashb
 
 Let’s dive into one of the dependency dashboard capabilities - **the Pending Approval feature**. 
 
-Say we want to take extra measures before updating major versions of a package (either to reduce noise or to handle it more carefully). Renovate offers an option to prevent automatic creation of major version update PRs and create such PRs only upon manual request from the Dependency Dashboard. In order to limit all major updates to on-demand creation:
+Say we want to take extra measures before updating major versions of a package (either to reduce noise or to handle it more carefully). Renovate offers an option to prevent automatic creation of major version update PRs and create such PRs only upon manual request from the Dependency Dashboard. 
+
+In the Dependency Dasboard, under the `Rate Limited` section, the `Update dependency commander to vX` is waiting to be created.
+
+> **Note**
+> based on the previously set `prHourlyLimit` configuration, 3 PRs per hour in our case, this PR will be created within an hour.
+
+<img width="928" alt="commander in Rate Limited" src="https://user-images.githubusercontent.com/102745725/178960104-c254c12f-08fb-4508-824d-20df60b2290f.png">
+
+Since we decided that we want to handle it manually, we will edit configurations and see how the depndency dashboard is affected by this change. 
+
+In order to limit all major updates to on-demand creation:
 
 1) Add this code segment to your `renovate.json` file:
 ```
@@ -244,32 +261,20 @@ Say we want to take extra measures before updating major versions of a package (
 ```
 2) Commit the changes
 
-To demonstrate this change in configuration, we need a dependency with a major update available. In our RenovateTutorial repo, the `commander` dependency fits that description. Since we already have an open PR for `commander`, we will perform a small work-around to rebase the update PR and have it appear immediately in the Dependency Dashboard:
+> **Note**
+> Changing the `renovate.json` configuraion file is a webhook that triggers Renovate to re-run.
 
-1) Go to the `Pull requests` section and open `Update dependency commander to vX`
+3) Now go back to the Dependency Dashboard in the Issues section
 
-2) Change the PR title as you like (if the title is not changed, Renovate will not re-open the PR after we close it in the next step):
-
-![image](https://user-images.githubusercontent.com/42116482/178510288-168c8297-3778-4e91-85f9-4f04d53a8f73.png)
-
-3) Close pull request:
-
-![image](https://user-images.githubusercontent.com/42116482/178510360-2fafc3a0-a650-4f9c-81d0-c655327cceed.png)
-
-4) Delete the associated branch:
-
-![image](https://user-images.githubusercontent.com/42116482/178510601-961c174a-2161-43c7-82e7-6f1a117b8494.png)
-
-5) Now go back to the Dependency Dashboard in the Issues section and re-run Renovate. 
-
-6) As you can see, `commander` major update PR now appears under the **Pending Approval** section and will not be opened unless manually triggered
+4) As you can see, `commander` major update PR now appears under the **Pending Approval** section and **will not** be opened unless manually triggered
 
      > **Note**
      > it make take a minute to complete Renovate's run 
 
-7) You can now manually open this PR by checking the box next to it
+5) You can now decide to manually open this PR by checking the box next to it
 
-8) Navigate to the `Pull requests` section to review the generated PR and merge it to the repo.
+6) Navigate to the `Pull requests` section to review the generated PR and merge it to the repo.
+
 
 **Congratulations! You are now familiar with Renovate’s Dependency Dashboard.** 🎈
 
