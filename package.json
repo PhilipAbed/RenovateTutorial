@@ -2,8 +2,6 @@
   "name": "renovate_tutorial",
   "version": "0.0.1",
   "description": "A simple package json for Renovate tutorial use only",
-  "main": "index.js",
-  "repository": "https://someDummygit/myOrg/myRepo.git",
   "author": "Philip",
   "license": "Apache-2.0",
   "dependencies": {
