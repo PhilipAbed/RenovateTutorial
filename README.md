@@ -222,7 +222,12 @@ You can also re-run the Renovate bot manually directly from the Dependency Dashb
 
  ![image](https://user-images.githubusercontent.com/42116482/178509789-3ebfe3c7-b0b1-4041-85df-8e5da0cd4c4c.png)
  
-- 
+- Before advancing, edit the `renovate.json` file and change `prHourlyLimit` value to -1.
+
+   This setting disables the rate limit on PR creation for future parts of this tutorial.
+   
+<img width="662" alt="image" src="https://user-images.githubusercontent.com/102745725/178940792-468eb916-317e-40e1-9a6b-777e2699f660.png">
+
 
 Let’s dive into one of the dependency dashboard capabilities - **the Pending Approval feature**. 
 
