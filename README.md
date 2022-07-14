@@ -7,9 +7,10 @@ Welcome to the Renovate hands-on tutorial.
 
 This tutorial is based on the [Renovate GitHub App](https://github.com/apps/renovate). you can also run Renovate as a CLI tool or a self-hosted application.
 
-In this tutorial, you will learn how to configure Renovate to your GitHub account and become familiar with some of Renovate’s basic features.
+> **Note**
+> Although this tutorial is based in the GitHub App, the concepts discussed apply to all environments.
 
-Although this tutorial is based in the GitHub App, the concepts discussed apply to all environments.
+In this tutorial, you will learn how to configure Renovate and become familiar with some of the basic features.
 
 What you will learn: 
 1) Installation
@@ -18,9 +19,9 @@ What you will learn:
 4) Dependency Dashboard 
 
 
-We will begin this tutorial by providing basic `getting started` information. This includes: Renovate App configuration and installation, default settings, and basic Renovate functionality. 
+We will begin this tutorial with configuring and installing the Renovate App and an overview of the default settings and basic functionalities. 
 
-Later, we will dive deeper into functional use-cases, advanced features, and `best practices` capabilities in order to use Renovate to its fullest.
+Later, we will dive deeper into functional use-cases, advanced features, and `best practices` so you'll know how to leverage Renovate to its fullest.
 
 ## Part 1 - Installation
 
