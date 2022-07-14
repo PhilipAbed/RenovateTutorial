@@ -104,7 +104,7 @@ Now let’s review the onboarding PR -
 
 Renovate offers the ability to change configurations before merging the onboarding PR as well as preview the results of these changes. At this point, Renovate has created a branch called renovate/configure which contains the `renovate.json` configuration file. By default, Renovate limits branch creation to 2 per hour:
 
-![image](https://user-images.githubusercontent.com/42116482/178494608-0d242758-ccc1-4f76-a045-94e8d640bafa.png)
+<img width="829" alt="onboarding warning hourly" src="https://user-images.githubusercontent.com/102745725/178961193-2f1f1548-5282-4d33-b8ef-6e141f0a643d.png">
 
 Example
 
@@ -132,7 +132,7 @@ As a user, despite Renovate’s suggestion to limit hourly PR creation to 2, we 
 <img width="830" alt="onboarding warning hourly update" src="https://user-images.githubusercontent.com/102745725/178960884-40077a5c-8fe1-422f-81c1-567ea1e6619b.png">
 
 > **Note**
-> May take a minute to appear
+> May take a few moments to update.
 
 6) Merge the onboarding pull request.
 
