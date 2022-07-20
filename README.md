@@ -56,7 +56,7 @@ For new installs:
 
 ![image](https://user-images.githubusercontent.com/42116482/178492276-ac0f5c03-db21-482c-95e9-07dc229ac298.png)
 
-- After a few seconds, you will be automatically directed to a dashboard where you can login and view the Renovate logs. We recommend saving this link for future use.
+- After a few seconds, you will be automatically directed to a dashboard where you can login and view the Renovate logs. We recommend saving this [link](https://app.renovatebot.com/dashboard) for future use.
 
 <img width="625" alt="Screen Shot 2022-07-14 at 14 24 26" src="https://user-images.githubusercontent.com/102745725/178972035-abe2e859-0756-498c-91d5-ec2f0cfdd503.png">
 
