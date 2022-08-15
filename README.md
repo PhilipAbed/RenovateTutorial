@@ -1,4 +1,4 @@
-# Renovate - Hands On Tutorial
+# Renovate - Hands On Tutorial (DRAFT) for actual repo: https://github.com/renovatebot/tutorial
 
 
 ## Introduction
